@@ -291,6 +291,19 @@ h1 {
   --card-accent: var(--accent-calculadora);
 }
 
+.service-card--pld,
+.service-card--calculadora {
+  --logo-max-height: 128px;
+}
+
+.service-card--pld .service-logo img,
+.service-card--calculadora .service-logo img {
+  width: auto;
+  max-width: min(100%, 220px);
+  height: auto;
+  max-height: var(--logo-max-height);
+}
+
 .service-card:hover {
   transform: translateY(-4px);
   border-color: rgba(11, 92, 173, 0.28);
@@ -878,6 +891,16 @@ h1 {
     --logo-max-height: 72px;
   }
 
+  .service-card--pld,
+  .service-card--calculadora {
+    --logo-max-height: 100px;
+  }
+
+  .service-card--pld .service-logo,
+  .service-card--calculadora .service-logo {
+    width: 148px;
+  }
+
   .service-logo img {
     width: var(--logo-width);
     max-height: var(--logo-max-height);
@@ -945,6 +968,11 @@ h1 {
   .service-card {
     --logo-width: min(100%, 200px);
     --logo-max-height: 100px;
+  }
+
+  .service-card--pld,
+  .service-card--calculadora {
+    --logo-max-height: 118px;
   }
 
   .service-logo img {

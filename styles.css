@@ -248,14 +248,16 @@ h1 {
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: var(--space-4);
-  min-height: 340px;
+  gap: var(--space-5);
+  min-height: 380px;
   padding: var(--space-5);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: var(--white);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  --logo-width: min(100%, 220px);
+  --logo-max-height: 112px;
   transition:
     transform 220ms ease,
     border-color 220ms ease,
@@ -328,16 +330,16 @@ h1 {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  height: 136px;
+  height: 168px;
   padding-top: var(--space-6);
+  overflow: hidden;
   flex-shrink: 0;
 }
 
 .service-logo img {
-  width: auto;
+  width: var(--logo-width);
   height: auto;
-  max-width: 200px;
-  max-height: 88px;
+  max-height: var(--logo-max-height);
   object-fit: contain;
   object-position: center;
 }
@@ -865,13 +867,20 @@ h1 {
   .service-logo {
     height: auto;
     min-height: 0;
+    max-height: 120px;
     padding-top: 0;
+    overflow: hidden;
     width: 132px;
   }
 
+  .service-card {
+    --logo-width: min(100%, 140px);
+    --logo-max-height: 72px;
+  }
+
   .service-logo img {
-    max-width: 120px;
-    max-height: 56px;
+    width: var(--logo-width);
+    max-height: var(--logo-max-height);
   }
 
   .service-icon {
@@ -926,15 +935,21 @@ h1 {
   }
 
   .service-logo {
-    height: 136px;
-    min-height: 136px;
+    height: 168px;
+    min-height: 168px;
     padding-top: var(--space-4);
+    overflow: hidden;
     width: auto;
   }
 
+  .service-card {
+    --logo-width: min(100%, 200px);
+    --logo-max-height: 100px;
+  }
+
   .service-logo img {
-    max-width: 180px;
-    max-height: 84px;
+    width: var(--logo-width);
+    max-height: var(--logo-max-height);
   }
 
   .service-cta {

@@ -459,9 +459,9 @@ h1 {
   line-height: 1.6;
 }
 
-/* Privacy teaser */
+/* Legal teaser */
 
-.privacy-teaser {
+.legal-teaser {
   display: grid;
   gap: var(--space-4);
   justify-items: center;
@@ -473,14 +473,14 @@ h1 {
   text-align: center;
 }
 
-.privacy-teaser h2 {
+.legal-teaser h2 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-.privacy-teaser p {
+.legal-teaser p {
   max-width: 640px;
   margin: 0;
   color: var(--muted);
@@ -488,14 +488,14 @@ h1 {
   line-height: 1.65;
 }
 
-.privacy-teaser a:not(.privacy-teaser__btn) {
+.legal-teaser a:not(.legal-teaser__btn) {
   color: var(--blue);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.privacy-teaser__btn {
+.legal-teaser__btn {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -512,13 +512,13 @@ h1 {
     transform 200ms ease;
 }
 
-.privacy-teaser__btn:hover {
+.legal-teaser__btn:hover {
   background: var(--ink);
   box-shadow: 0 4px 14px rgba(11, 92, 173, 0.28);
   transform: translateY(-1px);
 }
 
-.privacy-teaser__btn:focus-visible {
+.legal-teaser__btn:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
@@ -709,6 +709,13 @@ h1 {
 
 .site-footer p {
   margin: 0;
+}
+
+.site-footer__legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-5);
 }
 
 .site-footer__legal {
@@ -921,7 +928,7 @@ h1 {
     padding: var(--space-4);
   }
 
-  .privacy-teaser {
+  .legal-teaser {
     padding: var(--space-5);
   }
 

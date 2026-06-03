@@ -296,6 +296,10 @@ h1 {
   --logo-max-height: 128px;
 }
 
+.service-card--calculadora {
+  --logo-max-height: 134px;
+}
+
 .service-card--pld .service-logo img,
 .service-card--calculadora .service-logo img {
   width: auto;
@@ -903,6 +907,10 @@ h1 {
     --logo-max-height: 100px;
   }
 
+  .service-card--calculadora {
+    --logo-max-height: 104px;
+  }
+
   .service-card--pld .service-logo,
   .service-card--calculadora .service-logo {
     width: 148px;
@@ -980,6 +988,10 @@ h1 {
   .service-card--pld,
   .service-card--calculadora {
     --logo-max-height: 118px;
+  }
+
+  .service-card--calculadora {
+    --logo-max-height: 122px;
   }
 
   .service-logo img {

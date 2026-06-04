@@ -251,7 +251,7 @@ h1 {
   display: grid;
   grid-template-rows: auto 1fr;
   gap: var(--space-5);
-  min-height: 380px;
+  min-height: 456px;
   padding: var(--space-5);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -300,6 +300,11 @@ h1 {
   width: min(100%, calc((100% - 3 * var(--space-4)) / 4));
 }
 
+.service-card--minka .service-logo img {
+  width: var(--logo-width);
+  max-height: var(--logo-max-height);
+}
+
 .service-card--pld,
 .service-card--calculadora {
   --logo-max-height: 128px;
@@ -341,6 +346,7 @@ h1 {
   position: absolute;
   top: var(--space-4);
   right: var(--space-4);
+  max-width: calc(100% - var(--space-5));
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-pill);
   background: rgba(11, 92, 173, 0.08);
@@ -349,6 +355,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .service-logo {
@@ -400,6 +407,7 @@ h1 {
 
 .service-desc {
   margin: 0;
+  min-height: 4.8em;
   color: var(--muted);
   font-size: 0.9375rem;
   line-height: 1.6;
